@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the code from your GitHub repository
-                git 'https://github.com/your-username/HelloWorldJava.git'
+                git 'https://github.com/iam-rayees/Jenkins-Zero-To-Hero.git'
             }
         }
        
@@ -38,7 +38,7 @@ pipeline {
         stage('Run') {
             steps {
                 // Run the Java application
-                sh 'java -cp target/HelloWorldJava-1.0-SNAPSHOT.jar com.example.HelloWorl'
+                sh 'java HelloWorld'
             }
         }
     }
