@@ -4,14 +4,13 @@ pipeline {
     stage('Checkout') {
         steps {
             //Checkout the code from your Github Repository 
-            git ''
+            git 'https://github.com/iam-rayees/Jenkins-Zero-To-Hero.git'
           
         }  
-  
     }
-    stage('Front-end') {
+    stage('Build') {
       agent {
-        docker { image 'node:16-alpine' }
+        docker { image '' }
       }
       steps {
         sh 'node --version'
