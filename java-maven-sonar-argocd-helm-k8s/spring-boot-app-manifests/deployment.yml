@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: rayeez/java-ultimate-cicd:3
+        image: devops-ultimate-cicd:replaceImageTag
         ports:
         - containerPort: 8080
